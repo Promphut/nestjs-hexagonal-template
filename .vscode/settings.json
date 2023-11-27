@@ -1,0 +1,26 @@
+{
+    "editor.rulers": [120],
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "rest-client.environmentVariables": {
+      "$shared": {
+        "somethingShare": ""
+      },
+      "local": {
+        "useShare": "{{$shared somethingShare}}",
+        "operatorToken": "ThisIsMyOpertorToken",
+        "secretKey": "ThisIsMySecret",
+        "host": "http://localhost:4400"
+      },
+      "develop": {
+        "operatorToken": "ThisIsMyOpertorToken",
+        "secretKey": "ThisIsMySecret",
+        "host": "http://localhost:4400"
+      },
+      "staging": {
+        "operatorToken": "ThisIsMyOpertorToken",
+        "secretKey": "ThisIsMySecret",
+        "host": "http://localhost:4400"
+      }
+    }
+}
+  

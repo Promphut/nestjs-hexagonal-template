@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  api:
+    build:
+      context: ./
+      dockerfile: Dockerfile.dev
+    ports:
+      - 4400:3000
+    env_file: ./environments/.dev.env
+    volumes:
+      - ./:/app
+      - $PNPM_PATH:$PNPM_PATH
+    entrypoint: sh -c "pnpm config set store-dir $PNPM_PATH && pnpm start:dev"
+    # entrypoint: 'sleep 9999'
+    restart: always

@@ -1,0 +1,12 @@
+### Post Create User
+#  @name CreateUser
+POST {{host}}/user
+content-type: application/json
+
+{
+    "firstname": "John",
+    "lastname": "Doe",
+    "email": "john@test.com"
+}
+
+###

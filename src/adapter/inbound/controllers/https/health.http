@@ -1,0 +1,6 @@
+### Get health
+#  @name health
+GET {{host}}/health
+content-type: application/json
+
+###
